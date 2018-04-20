@@ -6,6 +6,7 @@
       <meta name="description" content="Aloha Apparel homepage"/>
       <meta name="author" content="Ephie"/>
       <meta name="keywords" content="aloha, apparel, fashion,"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <link rel="stylesheet" href="css/reset.css"/>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"/>
@@ -13,7 +14,7 @@
       <link rel="stylesheet" href="css/style.css"/>
     </head>
 
-  <!---body--->
+  <!-- body -->
     <body>
 
       <div class="container">
@@ -40,13 +41,13 @@
       </header>
 
       <div class="new-collection">
-        <h2><span>New Collection</span></br>Spring/Summer</br> 2016</h1>
+        <h2><span>New Collection</span></br>Spring/Summer</br> 2016</h2>
         <img class="banner-girl" src="img/products/banner-girl.png" alt="Banner Girl"/></img>
 
       </div>
 
       <div class="hand-crafted" id="about">
-          <h3>Hand-Crafted <span class="bold">Styles<span></h3>
+          <h3>Hand-Crafted <span class="bold">Styles</span></h3>
           <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current seleciton of procucts or sign-up for updates below</p>
       </div>
 
@@ -113,14 +114,19 @@
       </div>
 
       <div class="sign-up" id="updates">
-        <h3>Sign-up for <span class="bold">Updates<span></h3>
-        <p>Stay updates on our latest product releases, be the first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-        <form action="submit.php" method="post">
+
+        <h3>Sign-up for <span class="bold">Updates</span></h3>
+        <p>Stay updated on our latest product releases, be the first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+
+
+          <form action="submit.php" method="post">
           <label>
             <input type="text" placeholder="Your Email">
              <input type="submit" value="Subscribe">
           </labeL>
         </form>
+
+
       </div>
 
       <footer>
@@ -133,27 +139,28 @@
           <a class="email" href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
         </div>
         <div class="address">
-          <p>
-          <address>1490 W Broadway<br/>Vancouver, BC, Canada</address></p>
+          <p><address>1490 W Broadway<br/>Vancouver, BC, Canada</address></p>
         </div>
         </div>
-
+        
+<!-- social icons and links hide spans for mobile -->
         <ul class="social">
-          <li><a href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
-          <li><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
-          <li><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href=""><i class="fab fa-pinterest"></i> Pintrest</a></li>
-          <li><a href=""><i class="fab fa-google-plus-g"></i> Google+</a></li>
+          <li><a href=""><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i><span> Twitter</span></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i><span> Instagram</span></a></li>
+          <li><a href=""><i class="fab fa-pinterest"></i><span> Pintrest</span></a></li>
+          <li><a href=""><i class="fab fa-google-plus-g"></i><span>Google+</span></a></li>
         </ul>
 
       </footer>
 
-</div>
+    </div>
+
+<!-- js scripts -->
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/flickity.js"></script>
   <script src="js/script.js"></script>
+
   </body>
-
-
 
   </html>

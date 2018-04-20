@@ -1,8 +1,6 @@
-title{
-  }
-
-body{
-
+html{
+  font-size: 16px;
+  /* overflow: hidden; */
 }
 
 /* font-face - delete any unnecessary fonts at end*/
@@ -120,7 +118,8 @@ header{
   flex-flow: wrap;
   align-items: center;
   width: 100%;
-  margin-top: 10px;
+  padding-top: 10px;
+  justify-content: center;
 }
 /* aloha logo */
 
@@ -130,7 +129,7 @@ header{
 }
 
 .aloha-logo img{
-  padding:10px;
+  padding:0 10px;
   max-width: 60%;
 }
 
@@ -142,23 +141,23 @@ header{
 }
 
 .cart img{
-  padding:10px;
-  max-width: 60%;
+  padding:0 10px;
+  max-width: 25%;
 }
 
 /* nav bar */
 
 nav{
-  flex : 0 0 100%;
+  flex : 0 0 90%;
   text-transform: uppercase;
-  margin: 10px;
+  margin-bottom: 0.4rem;
 }
 
 nav ul{
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 2rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -172,18 +171,23 @@ nav ul{
   align-items: center;
   color:white;
 }
-
+.new-collection h2{
+  position:absolute;
+  top:30%;
+  left: 0;
+  right: 0;
+}
 .new-collection img{
   width: 40%;
-  position:relative;
+  margin: 2rem 0 -0.2rem 0;
+
 }
 
 
 /*hand-crafted text section*/
 
 .hand-crafted{
-  display:block;
-  padding:30pt 0pt;
+  padding:1rem 0 2rem 0;
 }
 
 /*  categories grid*/
@@ -199,11 +203,11 @@ nav ul{
 }
 
 .categories div{
-  padding: 140pt 0pt;
+  padding: 50pt 0pt;
   background-size:cover;
-  font-size: 3rem;
+  font-size: 1.2rem;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .mens{
@@ -214,7 +218,6 @@ nav ul{
 .trends{
   background-image: url("../img/categories/trends-category.jpg");
   flex: 0 50%;
-
 }
 
 .glasses{
@@ -235,7 +238,7 @@ nav ul{
 }
 
 .most-loved{
-  padding: 50pt 0pt;
+  padding: 1rem 0 3.5rem 0;
 }
 
 .carousel-cell {
@@ -254,37 +257,59 @@ nav ul{
 }
 
 .sign-up{
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/backgrounds/wave-bkgd.jpg");
-  background-size: cover;
-  background-position:bottom;
+  background-size: auto;
+  background-position: bottom;
   justify-content: center;
   align-content: center;
   color:white;
-  padding: 50pt 0pt;
+  padding: 1.5rem 0;
+  border-bottom: 0.4rem solid #FFFFFF;
+}
+
+/* subscribe form */
+form{
+  padding: 1rem 0;
+}
+label {
+  background-color:#FFFFFF;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  margin: 0 auton;
+
+}
+input[type=text]{
+  border-style: hidden;
+  margin-left: 0.4rem;
+  font-family: Raleway-Light;
+}
+input[type=submit]{
+  background-color:#e2574c;
+  color: #FFFFFF;
+  font-family: Raleway-Light;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  border-style: hidden;
 }
 
 /* footer */
 
 footer{
-  display:flex;
-  text-align:left;
+  text-align:center;
   background-color: #242424;
   color:white;
   font-family:"PlayfairDisplay-Regular";
-  /* font-size:1rem; */
-  padding: 50pt 20pt;
+  padding: 2rem 1.8rem;
   justify-content: space-between;
 }
 
 .footer-left{
-
-
 }
 
-.phone{
-  margin: 14pt 0pt;
+footer div{
+  margin: 1rem 0;
 }
 
 .address{
@@ -296,17 +321,25 @@ footer{
 }
 
 .social{
-display:flex;
-flex-flow:column;
-justify-content: space-between;
-font-family:"Raleway-Light";
-
+  display:flex;
+  flex-flow:row;
+  justify-content:center;
+  font-family:"Raleway-Light";
 }
+
+.social li{
+  margin: 1rem 0.5rem;
+}
+
+.social span{
+  display:none;
+}
+
 
 /* headings style*/
 
 h2{
-  font-size: 5rem;
+  font-size: 2rem;
   font-family:'PlayfairDisplay-Regular';
   margin:10px;
 }
@@ -321,20 +354,18 @@ h3{
   font-family:'PlayfairDisplay-Regular';
   font-size: 2rem;
   font-style: italic;
-  margin:10px;
+  margin: 1rem 0;
 }
 
 h4{
   font-family:'PlayfairDisplay-Regular';
-  font-size: 1.4rem;
-  margin:10px;
+  font-size: 1.2rem;
+  margin:0.6rem 0;
 }
 
 p{
-  font-size: 0.7rem;
-  line-height: 1.2;
-
-
+  font-size: 0.8rem;
+  line-height: 1.8;
 }
 
 .hand-crafted p {
@@ -342,7 +373,7 @@ p{
 }
 
 .sign-up {
-  text-shadow: 2px 2px 2px #2d2d2d
+  text-shadow: 2px 2px 2px #2d2d2d;
 }
 
 .bold{
@@ -361,4 +392,19 @@ a {
 
 hr{
   width: 100%;
+}
+
+/* for tablet */
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1240px) {
+    body {
+        background-color: lightblue;
+    }
 }
