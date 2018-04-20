@@ -9,49 +9,48 @@
 
       <link rel="stylesheet" href="css/reset.css"/>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"/>
-      <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
       <link rel="stylesheet" href="css/style.css"/>
-
-
     </head>
+
   <!---body--->
     <body>
 
       <div class="container">
 
       <header class="header">
-        <div class="aloha-logo" >
+        <div class="aloha-logo">
           <img class ="aloha-logo-icon" src="img/icons/aloha-logo.svg" alt="Aloha Logo"/></img>
         </div>
 
         <div class="cart">
           <img class="cart-icon" src="img/icons/cart-icon.svg" alt="Cart"/></img>
         </div>
+        <hr/>
 
-        <nav class="nav" class="brand-color">
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">Featured</a></li>
-            <li><a href="">Updates</a></li>
+        <nav class="nav">
+          <ul class="brand-color">
+            <li><a href="#about">About</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#updates">Updates</a></li>
           </ul>
         </nav>
 
       </header>
 
       <div class="new-collection">
-        <img class ="banner-girl" src="img/products/banner-girl.png" alt="Banner Girl"></img>
-        <img class ="flower-background" src="img/backgrounds/flower-bkgd.jpg" alt="Flower Background"></img>
-        <h2>New Collection</h2>
-        <h1>Spring/Summer 2016</h1>
+        <h2><span>New Collection</span></br>Spring/Summer</br> 2016</h1>
+        <img class="banner-girl" src="img/products/banner-girl.png" alt="Banner Girl"/></img>
+
       </div>
 
-      <div class="hand-crafted">
-          <h3>Hand-Crafted Styles</h3>
+      <div class="hand-crafted" id="about">
+          <h3>Hand-Crafted <span class="bold">Styles<span></h3>
           <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current seleciton of procucts or sign-up for updates below</p>
       </div>
 
-      <div class="categories">
+      <div class="categories" id="shop">
             <div class="mens"><a href="">Men's</a></div>
             <div class="trends"><a href="">Trends</a></div>
             <div class="glasses"><a href="">Glasses</a></div>
@@ -60,66 +59,66 @@
             <div class="womens"><a href="">Women's</a></div>
       </div>
 
-      <div class="most-loved">
-    <h3>Most-loved Products</h3>
-        <div class="most-loved-carousel">
-          <div class="carousel-cell" "knit dress">
+      <div class="most-loved" id="featured">
+      <h3>Most-loved <span class="bold">Products<span></h3>
+        <div class="main-carousel">
+          <div class="carousel-cell knit dress">
             <img src="img/products/stretch-knit-dress.jpg" alt="Stretch Knit Dress"></img>
             <p>Dresses</p>
-            <h3 class="brand-color"><a href="">Stretch Knit Dress</a></h3>
+            <h4 class="brand-color"><a href="">Stretch Knit Dress</a></h4>
             <p>$169.00</p>
           </div>
-          <div class="carousel-cell" "blue-shirt">
+          <div class="carousel-cell blue-shirt">
             <img src="img/products/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt"></img>
             <p>Shirts</p>
-            <h3 class="brand-color"><a href="">Cotton Blue Shirt</a></h3>
+            <h4 class="brand-color"><a href="">Cotton Blue Shirt</a></h4>
             <p>$89.00</p>
           </div>
-          <div class="carousel-cell" "checked-dress">
+          <div class="carousel-cell checked-dress">
             <img src="img/products/checked-stretch-dress.jpg" alt="Checked Stretch Dress"></img>
             <p>Dresses</p>
-            <h3 class="brand-color"><a href="">Checked Stretch Dress</a></h3>
+            <h4 class="brand-color"><a href="">Checked Stretch Dress</a></h4>
             <p>$129.00</p>
           </div>
-          <div class="carousel-cell" class="backpack">
+          <div class="carousel-cell backpack">
             <img src="img/products/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack"></img><p>Bags</p>
-            <h3 class="brand-color"><a href="">Blue Hipster Backpack</a></h3>
+            <h4 class="brand-color"><a href="">Blue Hipster Backpack</a></h4>
             <p>$69.00</p>
           </div>
-          <div class="carousel-cell" "denim-shorts">
+          <div class="carousel-cell denim-shorts">
             <img src="img/products/demin-overall-shorts.jpg" alt="Denim Overall Shorts"></img>
             <p>Denim</p>
-            <h3 class="brand-color"><a href="">Denim Overall Shorts</a></h3>
+            <h4 class="brand-color"><a href="">Denim Overall Shorts</a></h4>
             <p>$89.00</p>
           </div>
-          <div class="carousel-cell" "pink-dress">
+          <div class="carousel-cell pink-dress">
             <img src="img/products/pink-dotted-dress.jpg" alt="Pink Dotted Dress"></img>
             <p>Dresses</p>
-            <h3 class="brand-color"><a href="">Pink Dotted Dress</a></h3>
+            <h4 class="brand-color"><a href="">Pink Dotted Dress</a></h4>
             <p>$99.00</p>
           </div>
-          <div class="carousel-cell" "blue-dress">
+          <div class="carousel-cell blue-dress">
             <img src="img/products/blue-silk-dress.jpg" alt="Blue Silk Dress"></img>
             <p>Dresses</p>
-            <h3 class="brand-color"><a href="">Blue Silk Dress</a></h3>
+            <h4 class="brand-color"><a href="">Blue Silk Dress</a></h4>
             <p>$119.00</p>
           </div>
-          <div class="carousel-cell" "yellow-shirt">
-              <img src="img/products/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-Shirt"></img>
-              <p>Shirts</p>
-            <h3 class="brand-color"><a href="">Cotton Yellow Shirt</a></h3>
+          <div class="carousel-cell yellow-shirt">
+            <img src="img/products/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-Shirt"></img>
+            <p>Shirts</p>
+            <h4 class="brand-color"><a href="">Cotton Yellow Shirt</a></h4>
             <p>$169.00</p>
           </div>
         </div>
       </div>
 
-      <div class="sign-up">
-        <h3>Sign-up for Updates</h3>
+      <div class="sign-up" id="updates">
+        <h3>Sign-up for <span class="bold">Updates<span></h3>
         <p>Stay updates on our latest product releases, be the first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <form action="submit.php" method="post">
           <label>
-          Your E-mail
-            <input type="text"/>
+            <input type="text" placeholder="Your Email">
+             <input type="submit" value="Subscribe">
           </labeL>
         </form>
       </div>
@@ -127,7 +126,7 @@
       <footer>
         <div class="footer-left">
           <div class="copyright">
-          <p>© Aloha Apparel Co.<br/>Powered by HTML and CSS</p>
+          <p>© 2016 Aloha Apparel Co.<br/>Powered by HTML and CSS.</p>
         </div>
         <div class="phone">
           <p>604-604-6040.
