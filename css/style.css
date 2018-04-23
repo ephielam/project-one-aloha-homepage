@@ -1,5 +1,5 @@
 html{
-  font-size: 16px;
+  font-size: 14px;
   /* overflow: hidden; */
 }
 
@@ -106,7 +106,7 @@ html{
   height:auto;
   width:100%;
   margin:0 auto;
-  background-color:#FFFFFF;
+  background-color:#ffffff;
   font-size:1rem;
   font-family:'Raleway-Light';
   color:#2d2d2d;
@@ -118,31 +118,25 @@ header{
   flex-flow: wrap;
   align-items: center;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 0.4rem;
   justify-content: center;
 }
-/* aloha logo */
+
+/* aloha logo and cart icon*/
 
 .aloha-logo{
-  flex: 0 0 50%;
+  flex: 0 50%;
   text-align:left;
 }
 
-.aloha-logo img{
-  padding:0 10px;
-  max-width: 60%;
+header img{
+  padding:0 0.5rem;
+  height: 2.5rem;
 }
-
-/* cart icon */
 
 .cart{
-  flex: 0 0 50%;
+  flex: 0 50%;
   text-align:right;
-}
-
-.cart img{
-  padding:0 10px;
-  max-width: 25%;
 }
 
 /* nav bar */
@@ -176,13 +170,12 @@ nav ul{
   top:30%;
   left: 0;
   right: 0;
+  padding: 0 1rem;
 }
 .new-collection img{
   width: 40%;
   margin: 2rem 0 -0.2rem 0;
-
 }
-
 
 /*hand-crafted text section*/
 
@@ -198,43 +191,46 @@ nav ul{
   text-transform: uppercase;
   color:white;
   font-weight: bold;
-
-
+  justify-content: space-between;
 }
 
 .categories div{
-  padding: 50pt 0pt;
+  padding: 5rem 0;
   background-size:cover;
   font-size: 1.2rem;
   box-sizing: border-box;
-  margin-bottom: 5px;
+  border-bottom: 0.4rem solid #FFF;
 }
 
 .mens{
   background-image: url("../img/categories/mens-category.jpg");
-  flex:0 100%;
+  flex-basis: 100%;
 }
 
 .trends{
   background-image: url("../img/categories/trends-category.jpg");
-  flex: 0 50%;
+  flex-basis: 50%;
+  border-right: 0.2rem solid #ffffff;
 }
 
 .glasses{
   background-image: url("../img/categories/glasses-category.jpg");
-  flex: 0 50%;
+  flex-basis: 50%;
+  border-left: 0.2rem solid #ffffff;
 }
 .sale{
   background-image: url("../img/categories/sale-category.jpg");
   flex: 0 50%;
+  border-right: 0.2rem solid #ffffff;
 }
 .bags{
   background-image: url("../img/categories/bags-category.jpg");
   flex: 0 50%;
+  border-left: 0.2rem solid #ffffff;
 }
 .womens{
   background-image: url("../img/categories/womens-category.jpg");
-  flex: 0 100%;
+  flex-basis: 100%;
 }
 
 .most-loved{
@@ -260,8 +256,9 @@ nav ul{
   display: flex;
   flex-direction: column;
   background-image: url("../img/backgrounds/wave-bkgd.jpg");
-  background-size: auto;
+  background-size: cover;
   background-position: bottom;
+  background-repeat: no-repeat;
   justify-content: center;
   align-content: center;
   color:white;
@@ -275,15 +272,16 @@ form{
 }
 label {
   background-color:#FFFFFF;
-  padding: 0.2rem;
+  padding: 0.4rem;
   border-radius: 1rem;
-  margin: 0 auton;
+  margin: 0 auto;
 
 }
 input[type=text]{
   border-style: hidden;
   margin-left: 0.4rem;
   font-family: Raleway-Light;
+  width: 60%;
 }
 input[type=submit]{
   background-color:#e2574c;
@@ -305,8 +303,6 @@ footer{
   justify-content: space-between;
 }
 
-.footer-left{
-}
 
 footer div{
   margin: 1rem 0;
@@ -328,18 +324,17 @@ footer div{
 }
 
 .social li{
-  margin: 1rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .social span{
   display:none;
 }
 
-
-/* headings style*/
+/* headings and font style*/
 
 h2{
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-family:'PlayfairDisplay-Regular';
   margin:10px;
 }
@@ -347,7 +342,7 @@ h2{
 h2 span{
   font-family: Raleway-Light;
   text-transform: uppercase;
-  font-size:0.8rem;
+  font-size:1rem;
 }
 
 h3{
@@ -390,21 +385,314 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+    color: #b64036;
+}
+
 hr{
   width: 100%;
 }
 
-/* for tablet */
+/* additional styles for tablet */
+
 
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+  /* tablet categories style  */
+  html{
+    font-size: 16px;
+  }
+/* reorder header divs and adjust flex */
+  header{
+    flex-flow: nowrap;
+    padding: 1rem 0;
+  }
+
+  .aloha-logo{
+    flex: 1;
+    order: 1;
+  }
+
+  header img{
+    height: 4.4rem;
+  }
+
+  .cart{
+    flex: 1;
+    order: 3;
+    text-align:right;
+  }
+
+  nav{
+    flex : 3;
+    order: 2;
+    padding-top:1.2rem;
+  }
+  nav ul{
+    justify-content: space-around;
+    font-size: 1.4rem;
+  }
+
+  /* remove horizontal rule */
+  header hr{
+    display:none;
+  }
+
+  /* adjust banner girl size and text positioning */
+  .new-collection h2{
+    top:22%;
+  }
+  .new-collection h2 span{
+    font-weight: bold;
+  }
+  .new-collection img{
+    width: 25%;
+  }
+
+/*adjust padding to hand crafted div*/
+ .hand-crafted{
+   padding: 3rem 0 4rem 0;
+ }
+
+  /* rearranging categories from mobile to tablet display*/
+  .categories div{
+    font-size: 2rem;
+    padding: 5.6rem 0;
+    border-bottom: 0.5rem solid #ffffff;
+  }
+  .mens{
+    flex-basis: 50%;
+    border-right: 0.25rem solid #ffffff;
+  }
+
+  .trends{
+    flex-basis: 25%;
+    border-left: 0.25rem solid #ffffff;
+    border-right: 0.25rem solid #ffffff;
+  }
+
+  .glasses{
+    flex-basis: 25%;
+    border-left: 0.25rem solid #ffffff;
+  }
+  .sale{
+    flex: 0 25%;
+    border-right: 0.25rem solid #ffffff;
+  }
+  .bags{
+    flex: 0 25%;
+    border-left: 0.25rem solid #ffffff;
+    border-right: 0.25rem solid #ffffff;
+  }
+  .womens{
+    flex-basis: 50%;
+    border-left: 0.25rem solid #ffffff;
+  }
+
+/* tablet carousel style  */
+  .carousel-cell {
+  /* 2 items visible at any time */
+    width: 50%;
+  }
+
+  .carousel-cell p{
+    font-size: 1rem;
+  }
+
+  /*adjust padding to most loved div*/
+   .most-loved{
+     padding: 2rem 0 6rem 0;
+   }
+
+/* sign-up section tablet changes */
+  .sign-up{
+    padding: 3rem 2rem;
+    border-bottom: 0.6rem solid #FFFFFF;
+  }
+
+  /* subscribe form */
+  form{
+    padding: 2rem 0 2.4rem 0;
+  }
+
+  label {
+    padding: 1rem;
+    border-radius: 3rem;
+  }
+
+  input[type=text]{
+    margin-left: 1rem;
+    width: 50%;
+    font-size: 1.3rem;
+  }
+  input[type=submit]{
+    padding: 0.6rem 1.8rem;
+    border-radius: 3rem;
+    border-style: hidden;
+    font-size: 1.2rem;
+    margin-right: -0.6rem;
+  }
+
+/* tablet footer changes */
+footer{
+  display:flex;
+  text-align:left;
+  padding: 3.6rem 1.2rem;
+}
+.address{
+  font-size: 1.6rem;
 }
 
-/* for desktop */
+.social{
+  /* displays social icons in column  */
+  flex-flow:column;
+}
+
+.social li{
+  /* margin: 0.8rem 0.5rem; */
+  padding: 0.7rem 0;
+  font-size: 1.4rem;
+}
+
+.social span{
+  /* displays social icon name */
+  display:inline-block;
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
+/* tablet font style */
+h2{
+  font-size: 4.6rem;
+}
+
+h2 span{
+  font-size:2rem;
+}
+
+h3{
+  margin: 2rem 0;
+  font-size: 3.4rem;
+}
+
+h4{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+/* additional styles for desktop */
 @media only screen and (min-width: 1240px) {
-    body {
-        background-color: lightblue;
+  /* header adjust flex */
+    nav{
+      flex : 1;
     }
+    nav ul{
+      justify-content: space-around;
+      font-size: 1.2rem;
+    }
+
+    /* adjust banner girl size and text positioning */
+    .new-collection h2{
+      top:35%;
+    }
+    .new-collection h2 span{
+      font-size: 1.2rem;
+    }
+    .new-collection img{
+      width: 20%;
+    }
+
+    /* hand-crafted section center and wrap text */
+    .hand-crafted{
+      padding: 2rem 14rem 3.6rem 14rem;
+    }
+
+    /* rearranging categories from mobile to tablet display*/
+    .categories div{
+      padding: 9rem 0;
+      border-bottom: 0.6rem solid #ffffff;
+    }
+    .mens{
+      border-right: 0.3rem solid #ffffff;
+    }
+
+    .trends{
+      border-left: 0.3rem solid #ffffff;
+      border-right: 0.3rem solid #ffffff;
+    }
+
+    .glasses{
+      border-left: 0.3rem solid #ffffff;
+    }
+
+    .sale{
+      border-right: 0.3rem solid #ffffff;
+    }
+
+    .bags{
+      border-left: 0.3rem solid #ffffff;
+      border-right: 0.3rem solid #ffffff;
+    }
+
+    .womens{
+      border-left: 0.3rem solid #ffffff;
+    }
+
+    /* desktop carousel style  */
+    .carousel-cell {
+    /* 4 items visible at any time */
+      width: 25%;
+    }
+
+    .carousel-cell p{
+      font-size: 0.8rem;
+    }
+
+    /* sign-up section tablet changes */
+    /* center and wrap text by adjusting padding */
+    .sign-up{
+      padding: 3rem 18rem;
+    }
+
+    /* subscribe form */
+      input[type=text]{
+      width: 40%;
+      font-size: 1rem;
+    }
+    input[type=submit]{
+      font-size: 1rem;
+      margin-right: -0.6rem;
+    }
+
+  /* tablet footer changes */
+  footer{
+    padding: 3.6rem 3rem;
+    font-size: 1rem;
+  }
+  .address{
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .social li{
+    padding: 0.6rem 0;
+    font-size: 1.1rem;
+  }
+
+  /* desktop font style */
+  h3{
+    margin: 1.6rem 0;
+    font-size: 2.4rem;
+  }
+
+  h4{
+    font-size: 1.6rem;
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+
 }
